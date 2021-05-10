@@ -3,56 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Quick Convert</title>
-    <style>
-        hr{
-            width: 500px;
-        }
-        select{
-            min-width: 35px;
-            height: 20px;
-            text-align: center;
-            border: 1px solid;
-            border-radius: 1em;
-        }
-         input{
-            border-radius: 1em;
-            border: 1px solid;
-            margin: 0;
-        }
-        input:focus {
-            background-color: lightblue;
-            border-radius: 1em;
-            border: 1px solid;
-            background-color: light-blue;
-        }
-        .center {
-            background-color: grey;
-            font-family: "Copperplate";
-            border: 3px solid black;
-            width: 500px;
-            text-align: center;
-            margin: auto;
-            border-radius: 1em;
-            background-image: url('https://t3.ftcdn.net/jpg/02/48/70/70/360_F_248707085_XNquo7iYG2zDN6vgedWMJVLNOtq7Z6tx.jpg');
-            background-size: cover;
-        }
-        .backGround {
-            background-color: white;
-            width: 550px;
-            margin: auto;
-            border: 3px solid black;
-            border-radius: 1em;
-            background-image: url('https://i.imgur.com/OXKDAm3.jpg');
-            background-repeat: repeat;
-            background-size: cover;
-
-        }
-        body {
-            background-image: radial-gradient(40% 50%, #201828 80%, #061922 100%);
-            background-color: #061922;
-        }
-
-    </style>
+    <link rel="stylesheet" href="Design.css">
     <script src="Math.js"></script>
 </head>
 
@@ -85,11 +36,15 @@
         <select id="DistanceOptionOne" onchange="Distance()">
             <option>Inch</option><option>Feet</option>
             <option>Yard</option><option>Mile</option>
+            <option>Millimeter</option><option>Centimeter</option>
+            <option>Meter</option><option>Kilometer</option>
         </select>
         <input id="DistanceInput" placeholder="12" oninput="Distance()" type="number"> to
         <select id="DistanceOptionTwo" onchange="Distance()">
             <option>Inch</option><option selected="selected">Feet</option>
             <option>Yard</option><option>Mile</option>
+            <option>Millimeter</option><option>Centimeter</option>
+            <option>Meter</option><option>Kilometer</option>
         </select>
         <p id="OutputD">12 Inches = 1 Feet</p>
         <br>
@@ -143,12 +98,14 @@
         <h3>Time</h3>
         <select id="TimeOptionOne" onchange="Time()">
             <option>Seconds</option><option>Minutes</option>
-            <option>Hours</option><option>Days</option><option>Years</option>
+            <option>Hours</option><option>Days</option>
+            <option>Months</option><option>Years</option>
         </select>
         <input id="TimeInput" placeholder="60" oninput="Time()" type="number"> to
         <select id="TimeOptionTwo" onchange="Time()">
             <option>Seconds</option><option selected="selected">Minutes</option>
-            <option>Hours</option><option>Days</option><option>Years</option>
+            <option>Hours</option><option>Days</option>
+            <option>Months</option><option>Years</option>
         </select>
         <p id="OutputTi">60 Seconds = 1 Minutes</p>
         <br>
@@ -210,8 +167,10 @@
     </div>
 <!--This is the end of the code for the temperature conversion section-->
 <br>
-
+    <button class ="gitImage" onclick="location.href='https://github.com/Fangpower/QuickConvert'"><img class="image" src="https://github.githubassets.com/images/modules/logos_page/GitHub-Mark.png"></button>
+<br><br>
 </div>
+
 
 
 

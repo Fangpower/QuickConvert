@@ -1,0 +1,64 @@
+/*This controls the size of all the lines dividing each section on the page.*/
+hr{
+    width: 500px;
+}
+/*This section controls the looks of the select boxes giving them an outline and size;*/
+select{
+    min-width: 35px;
+    height: 20px;
+    text-align: center;
+    border: 1px solid;
+    border-radius: 0.5em;
+}
+/*This section controls the background image giving it the gradient and color.*/
+body {
+    background-image: radial-gradient(40% 50%, #201828 80%, #061922 100%);
+    background-color: #061922;
+}
+/*This section controls the look of the input boxes giving them an outline*/
+input{
+    border-radius: 0.5em;
+    border: 0.5px solid;
+    margin: 0;
+}
+/*This section controls the look of the input boxes when they are selected changing their color and giving them an outline*/
+input:focus {
+    background-color: lightblue;
+    border-radius: 1px;
+    border: 1px solid;
+}
+/*This section is the most important one. It moves everything to the center of the screen, centers the text within those boxes,
+and gives all of the an outline and a background image.*/
+.center {
+    background-color: grey;
+    font-family: "Copperplate";
+    border: 3px solid black;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 1em;
+    background-image: url('https://t3.ftcdn.net/jpg/02/48/70/70/360_F_248707085_XNquo7iYG2zDN6vgedWMJVLNOtq7Z6tx.jpg');
+    background-size: cover;
+}
+/*This section moves the main div to the center of the screen and gives it a background image and outline.*/
+.backGround {
+    background-color: white;
+    width: 550px;
+    margin: auto;
+    border: 3px solid black;
+    border-radius: 1em;
+    background-image: url('https://i.imgur.com/OXKDAm3.jpg');
+    background-size: cover;
+}
+/*This section consoles the size of the github image at the bottom of the screen so it isn't to big but still visible.*/
+.image {
+    width:50px;
+    height:50px;
+}
+/*This section moves the button for the github image to the bottom and center of the screen and gives it an outline.*/
+.gitImage {
+    top: 195%;
+    transform: translateX(360%);
+    border-radius: 1em;
+    border: 3px solid black;
+}
