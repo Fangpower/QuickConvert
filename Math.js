@@ -28,10 +28,10 @@ function Distance() {
                 case "Feet": a = input + " Inches = " + parseFloat(input * 12).toFixed(4) + " Feet"; break;
                 case "Yard": a = input + " Inches = " + parseFloat(input/36).toFixed(4) + " Yards"; break;
                 case "Mile": a = input + " Inches = " + parseFloat(input/63360).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 25.4).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 2.54).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input / 39.37).toFixed(4) + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 39370).toFixed(4) + " Kilometers"; break;
             }
         break;
 
@@ -41,10 +41,10 @@ function Distance() {
                 case "Feet": a = input + " Feet = " + input + " Feet"; break;
                 case "Yard": a = input + " Feet = " + parseFloat(input / 3).toFixed(4) + " Yards"; break;
                 case "Mile": a = input + " Feet = " + parseFloat(input / 5280).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 305).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 30.48).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input / 3.281).toFixed(4) + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 3281).toFixed(4) + " Kilometers"; break;
             }
         break;
 
@@ -54,10 +54,10 @@ function Distance() {
                 case "Feet": a = input + " Yards = " + parseFloat(input * 3).toFixed(4) + " Feet"; break;
                 case "Yard": a = input + " Yards = " + input + " Yards"; break;
                 case "Mile": a = input + " Yards = " + parseFloat(input / 1760).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                case "Centimeters": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 914).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 91.44).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input / 1.094).toFixed(4) + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1094).toFixed(4) + " Kilometers"; break;
             }
         break;
 
@@ -67,64 +67,64 @@ function Distance() {
                 case "Feet": a = input + " Miles = " + parseFloat(input * 5280).toFixed(4) + " Feet"; break;
                 case "Yard": a = input + " Miles = " + parseFloat(input * 1760).toFixed(4) + " Yards"; break;
                 case "Mile": a = input + " Miles = " + input + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                case "Centimeters": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 1.609e+6).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 160934).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1609).toFixed(4) + " Meters"; break;
                 case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
             }
         break;
 
         case "Millimeter":
-                switch(opTwo){
-                    case "Inch": a = input + " Millimeters = " + parseFloat(input / 25.4).toFixed(4) + " Inches"; break;
-                    case "Feet": a = input + " Millimeters = " + parseFloat(input / 305).toFixed(4) + " Feet"; break;
-                    case "Yard": a = input + " Millimeters = " + parseFloat(input / 914).toFixed(4) + " Yards"; break;
-                    case "Mile": a = input + " Millimeters = " + parseFloat(input / 1.609e+6).toFixed(4) + " Miles"; break;
-                    case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                    case "Centimeters": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                    case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                    case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
-                }
+            switch(opTwo){
+                case "Inch": a = input + " Millimeters = " + parseFloat(input / 25.4).toFixed(4) + " Inches"; break;
+                case "Feet": a = input + " Millimeters = " + parseFloat(input / 305).toFixed(4) + " Feet"; break;
+                case "Yard": a = input + " Millimeters = " + parseFloat(input / 914).toFixed(4) + " Yards"; break;
+                case "Mile": a = input + " Millimeters = " + parseFloat(input / 1.609e+6).toFixed(4) + " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + input + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input / 10).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1000).toFixed(4) + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1e+6).toFixed(4) + " Kilometers"; break;
+            }
         break;
 
-            case "Centimeter":
-                switch(opTwo){
-                    case "Inch": a = input + " Centimeters = " + parseFloat(input / 2.54).toFixed(4) + " Inches"; break;
-                    case "Feet": a = input + " Centimeters = " + parseFloat(input / 30.48).toFixed(4) + " Feet"; break;
-                    case "Yard": a = input + " Centimeters = " + parseFloat(input / 91.44).toFixed(4) + " Yards"; break;
-                    case "Mile": a = input + " Centimeters = " + parseFloat(input / 160934).toFixed(4) + " Miles"; break;
-                    case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                    case "Centimeters": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                    case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                    case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
-                }
-            break;
+        case "Centimeter":
+            switch(opTwo){
+                case "Inch": a = input + " Centimeters = " + parseFloat(input / 2.54).toFixed(4) + " Inches"; break;
+                case "Feet": a = input + " Centimeters = " + parseFloat(input / 30.48).toFixed(4) + " Feet"; break;
+                case "Yard": a = input + " Centimeters = " + parseFloat(input / 91.44).toFixed(4) + " Yards"; break;
+                case "Mile": a = input + " Centimeters = " + parseFloat(input / 160934).toFixed(4) + " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 10).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + input + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input * 100).toFixed(4) + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 100000).toFixed(4) + " Kilometers"; break;
+            }
+        break;
 
-            case "Meter":
-                switch(opTwo){
-                    case "Inch": a = input + " Meters = " + parseFloat(input / 39.37).toFixed(4) + " Inches"; break;
-                    case "Feet": a = input + " Meters = " + parseFloat(input * 3.281).toFixed(4) + " Feet"; break;
-                    case "Yard": a = input + " Meters = " + parseFloat(input * 1.094).toFixed(4) + " Yards"; break;
-                    case "Mile": a = input + " Meters = " + parseFloat(input / 1609).toFixed(4) + " Miles"; break;
-                    case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                    case "Centimeters": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                    case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                    case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
-                }
-            break;
+        case "Meter":
+            switch(opTwo){
+                case "Inch": a = input + " Meters = " + parseFloat(input / 39.37).toFixed(4) + " Inches"; break;
+                case "Feet": a = input + " Meters = " + parseFloat(input * 3.281).toFixed(4) + " Feet"; break;
+                case "Yard": a = input + " Meters = " + parseFloat(input * 1.094).toFixed(4) + " Yards"; break;
+                case "Mile": a = input + " Meters = " + parseFloat(input / 1609).toFixed(4) + " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 1000).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 100).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + input + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1000).toFixed(4) + " Kilometers"; break;
+            }
+        break;
 
-            case "Kilometer":
-                switch(opTwo){
-                    case "Inch": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Inches"; break;
-                    case "Feet": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Feet"; break;
-                    case "Yard": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Yards"; break;
-                    case "Mile": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Miles"; break;
-                    case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Millimeters"; break;
-                    case "Centimeters": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Centimeters"; break;
-                    case "Meter": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Meters"; break;
-                    case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
-                }
-            break;
+        case "Kilometer":
+            switch(opTwo){
+                case "Inch": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Inches"; break;
+                case "Feet": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Feet"; break;
+                case "Yard": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Yards"; break;
+                case "Mile": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 1e+6).toFixed(4) + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 100000).toFixed(4) + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1000).toFixed(4) + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + input + " Kilometers"; break;
+            }
+        break;
     }
 
     document.getElementById("OutputD").innerHTML = a;
@@ -328,7 +328,7 @@ function Time() {
                 case "Minutes": a = input + " Years = " + parseFloat(input * 525600).toFixed(4) + " Minutes"; break;
                 case "Hours": a = input + " Years = " + parseFloat(input * 8760).toFixed(4) + " Hours"; break;
                 case "Days": a = input + " Years = " + parseFloat(input * 365).toFixed(4) + " Days"; break;
-                case "Monts": a = input + " Years = " + parseFloat(input * 12).toFixed(4) + " Months"; break;
+                case "Months": a = input + " Years = " + parseFloat(input * 12).toFixed(4) + " Months"; break;
                 case "Years": a = input + " Years = " + input + " Years"; break;
             }
         break;
