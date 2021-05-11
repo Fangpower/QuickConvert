@@ -5,6 +5,7 @@
     <title>Quick Convert</title>
     <link rel="stylesheet" href="Design.css">
     <script src="Math.js"></script>
+    <script src="Swapper.js"></script>
 </head>
 
 <body onload="time()">
@@ -33,14 +34,14 @@
 <!--This is the start of the code for the distance conversion section-->
     <div class="center">
         <h3>Distance</h3>
-        <select id="DistanceOptionOne" onchange="Distance()">
+        <select id="DistanceOptionOne" onchange="swapDistance(1)">
             <option>Inch</option><option>Feet</option>
             <option>Yard</option><option>Mile</option>
             <option>Millimeter</option><option>Centimeter</option>
             <option>Meter</option><option>Kilometer</option>
         </select>
         <input id="DistanceInput" placeholder="12" oninput="Distance()" type="number"> to
-        <select id="DistanceOptionTwo" onchange="Distance()">
+        <select id="DistanceOptionTwo" onchange="swapDistance(2)">
             <option>Inch</option><option selected="selected">Feet</option>
             <option>Yard</option><option>Mile</option>
             <option>Millimeter</option><option>Centimeter</option>
@@ -56,13 +57,13 @@
 <!--This is the start of the code for the weight conversion section-->
     <div class="center">
         <h3>Weight</h3>
-        <select id="WeightOptionOne" onchange="Weight()">
+        <select id="WeightOptionOne" onchange="swapWeight(1)">
             <option>Pound</option><option>Ounce</option>
             <option>Gram</option><option>Kilogram</option>
             <option>US Ton</option><option>UK Ton</option>
         </select>
         <input id="WeightInput" placeholder="1" oninput="Weight()" type="number"> to
-        <select id="WeightOptionTwo" onchange="Weight()">
+        <select id="WeightOptionTwo" onchange="swapWeight(2)">
             <option>Pound</option><option selected="selected">Ounce</option>
             <option>Gram</option><option>Kilogram</option>
             <option>US Ton</option><option>UK Ton</option>
@@ -77,12 +78,12 @@
 <!--This is the start of the code for the temperature conversion section-->
     <div class="center">
         <h3>Temperature</h3>
-        <select id="TempOptionOne" onchange="Temperature()">
+        <select id="TempOptionOne" onchange="swapTemperature(1)">
             <option>Fahrenheit</option><option>Celsius</option>
             <option>Kelvin</option>
         </select>
         <input id="TempInput" placeholder="32" oninput="Temperature()" type="number"> to
-        <select id="TempOptionTwo" onchange="Temperature()">
+        <select id="TempOptionTwo" onchange="swapTemperature(2)">
             <option>Fahrenheit</option><option selected="selected">Celsius</option>
             <option>Kelvin</option>
         </select>
@@ -96,13 +97,13 @@
 <!--This is the start of the code for the time conversion section-->
     <div class="center">
         <h3>Time</h3>
-        <select id="TimeOptionOne" onchange="Time()">
+        <select id="TimeOptionOne" onchange="swapTime(1)">
             <option>Seconds</option><option>Minutes</option>
             <option>Hours</option><option>Days</option>
             <option>Months</option><option>Years</option>
         </select>
         <input id="TimeInput" placeholder="60" oninput="Time()" type="number"> to
-        <select id="TimeOptionTwo" onchange="Time()">
+        <select id="TimeOptionTwo" onchange="swapTime(2)">
             <option>Seconds</option><option selected="selected">Minutes</option>
             <option>Hours</option><option>Days</option>
             <option>Months</option><option>Years</option>
@@ -117,12 +118,12 @@
 <!--This is the start of the code for the time conversion section-->
     <div class="center">
         <h3>Speed</h3>
-        <select id="SpeedOptionOne" onchange="Speed()">
+        <select id="SpeedOptionOne" onchange="swapSpeed(1)">
             <option>Miles Per Hour</option><option>Feet Per Second</option>
             <option>Meters Per Second</option><option>Kilometer Per Hour</option><option>Knot</option>
         </select>
         <input id="SpeedInput" placeholder="60" oninput="Speed()" type="number"> to
-        <select id="SpeedOptionTwo" onchange="Speed()">
+        <select id="SpeedOptionTwo" onchange="swapSpeed(2)">
             <option>Miles Per Hour</option><option selected="selected">Feet Per Second</option>
             <option>Meters Per Second</option><option>Kilometer Per Hour</option><option>Knot</option>
         </select>
@@ -136,12 +137,12 @@
 <!--This is the start of the code for the time conversion section-->
     <div class="center">
         <h3>Frequency</h3>
-        <select id="FreOptionOne" onchange="Frequency()">
+        <select id="FreOptionOne" onchange="swapFrequency(1)">
             <option>Hertz</option><option>Kilohertz</option>
             <option>Megahertz</option><option>Gigahertz</option>
         </select>
         <input id="FreInput" placeholder="60" oninput="Frequency()" type="number"> to
-        <select id="FreOptionTwo" onchange="Frequency()">
+        <select id="FreOptionTwo" onchange="swapFrequency(2)">
             <option>Hertz</option><option selected="selected">Kilohertz</option>
             <option>Megahertz</option><option>Gigahertz</option>
         </select>
@@ -155,11 +156,11 @@
 <!--This is the start of the code for the temperature conversion section-->
     <div class="center">
         <h3>Fuel Economy</h3>
-        <select id="FuelOptionOne" onchange="Fuel()">
+        <select id="FuelOptionOne" onchange="swapFuel(1)">
             <option>Kilometer per Liter</option><option>Miles per Gallon</option>
         </select>
         <input id="FuelInput" placeholder="1" oninput="Fuel()" type="number"> to
-        <select id="FuelOptionTwo" onchange="Fuel()">
+        <select id="FuelOptionTwo" onchange="swapFuel(2)">
             <option>Kilometer per Liter</option><option selected="selected">Miles per Gallon</option>
         </select>
         <p id="OutputFu">1 Kilometer per Liter = 2.3520 Miles per Gallon</p>
