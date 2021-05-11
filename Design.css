@@ -1,9 +1,3 @@
-/*This controls the size of all the lines dividing each section on the page.*/
-hr{
-    width: 475px;
-    border: 2px solid grey;
-    border-radius: 5em;
-}
 /*This section controls the looks of the select boxes giving them an outline and size;*/
 select{
     min-width: 35px;
