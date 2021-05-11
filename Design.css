@@ -1,6 +1,8 @@
 /*This controls the size of all the lines dividing each section on the page.*/
 hr{
-    width: 500px;
+    width: 475px;
+    border: 2px solid grey;
+    border-radius: 5em;
 }
 /*This section controls the looks of the select boxes giving them an outline and size;*/
 select{
@@ -9,6 +11,7 @@ select{
     text-align: center;
     border: 1px solid;
     border-radius: 0.5em;
+    background-color: lightblue;
 }
 /*This section controls the background image giving it the gradient and color.*/
 body {
@@ -18,14 +21,15 @@ body {
 /*This section controls the look of the input boxes giving them an outline*/
 input{
     border-radius: 0.5em;
-    border: 0.5px solid;
+    border: 0.5px solid black;
+    background-color: lightblue;
     margin: 0;
 }
 /*This section controls the look of the input boxes when they are selected changing their color and giving them an outline*/
 input:focus {
-    background-color: lightblue;
+    background-color: lightgreen;
     border-radius: 1px;
-    border: 1px solid;
+    border: 1px solid black;
 }
 /*This section is the most important one. It moves everything to the center of the screen, centers the text within those boxes,
 and gives all of the an outline and a background image.*/
@@ -36,7 +40,7 @@ and gives all of the an outline and a background image.*/
     width: 500px;
     text-align: center;
     margin: auto;
-    border-radius: 1em;
+    border-radius: 5em;
     background-image: url('https://t3.ftcdn.net/jpg/02/48/70/70/360_F_248707085_XNquo7iYG2zDN6vgedWMJVLNOtq7Z6tx.jpg');
     background-size: cover;
 }
@@ -46,7 +50,7 @@ and gives all of the an outline and a background image.*/
     width: 550px;
     margin: auto;
     border: 3px solid black;
-    border-radius: 1em;
+    border-radius: 4em;
     background-image: url('https://i.imgur.com/OXKDAm3.jpg');
     background-size: cover;
 }
