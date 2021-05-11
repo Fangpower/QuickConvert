@@ -9,7 +9,7 @@ Then at the bottom of the function it sets the "Answer" text in the html file to
 */
 
 //This function converts the different measurements to one another.
-function Distance() {
+function Distance(){
     var opOne = document.getElementById("DistanceOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("DistanceOptionTwo");
@@ -25,103 +25,103 @@ function Distance() {
         case "Inch":
             switch(opTwo){
                 case "Inch": a = input + " Inches = " + input + " Inches"; break;
-                case "Feet": a = input + " Inches = " + parseFloat(input * 12).toFixed(4) + " Feet"; break;
-                case "Yard": a = input + " Inches = " + parseFloat(input/36).toFixed(4) + " Yards"; break;
-                case "Mile": a = input + " Inches = " + parseFloat(input/63360).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 25.4).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 2.54).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input / 39.37).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 39370).toFixed(4) + " Kilometers"; break;
+                case "Feet": a = input + " Inches = " + Math.round((input * 12) * 100) / 100 + " Feet"; break;
+                case "Yard": a = input + " Inches = " + Math.round((input/36) * 100) / 100 + " Yards"; break;
+                case "Mile": a = input + " Inches = " + Math.round((input/63360) * 100) / 100 + " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 25.4) * 100) / 100 + " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input * 2.54) * 100) / 100 + " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input / 39.37) * 100) / 100 + " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 39370) * 100) / 100 + " Kilometers"; break;
             }
         break;
 
         case "Feet":
             switch(opTwo){
-                case "Inch": a = input + " Feet = " + parseFloat(input * 12).toFixed(4) + " Inches"; break;
+                case "Inch": a = input + " Feet = " + Math.round((input * 12) * 100) / 100+ " Inches"; break;
                 case "Feet": a = input + " Feet = " + input + " Feet"; break;
-                case "Yard": a = input + " Feet = " + parseFloat(input / 3).toFixed(4) + " Yards"; break;
-                case "Mile": a = input + " Feet = " + parseFloat(input / 5280).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 305).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 30.48).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input / 3.281).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 3281).toFixed(4) + " Kilometers"; break;
+                case "Yard": a = input + " Feet = " + Math.round((input / 3) * 100) / 100+ " Yards"; break;
+                case "Mile": a = input + " Feet = " + Math.round((input / 5280) * 100) / 100+ " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 305) * 100) / 100+ " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input * 30.48) * 100) / 100+ " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input / 3.281) * 100) / 100+ " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 3281) * 100) / 100+ " Kilometers"; break;
             }
         break;
 
         case "Yard":
             switch(opTwo){
-                case "Inch": a = input + " Yards = " + parseFloat(input * 36).toFixed(4) + " Inches"; break;
-                case "Feet": a = input + " Yards = " + parseFloat(input * 3).toFixed(4) + " Feet"; break;
+                case "Inch": a = input + " Yards = " + Math.round((input * 36) * 100) / 100+ " Inches"; break;
+                case "Feet": a = input + " Yards = " + Math.round((input * 3) * 100) / 100+ " Feet"; break;
                 case "Yard": a = input + " Yards = " + input + " Yards"; break;
-                case "Mile": a = input + " Yards = " + parseFloat(input / 1760).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 914).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 91.44).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input / 1.094).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1094).toFixed(4) + " Kilometers"; break;
+                case "Mile": a = input + " Yards = " + Math.round((input / 1760) * 100) / 100+ " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 914) * 100) / 100+ " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input * 91.44) * 100) / 100+ " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input / 1.094) * 100) / 100+ " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 1094) * 100) / 100+ " Kilometers"; break;
             }
         break;
 
         case "Mile":
             switch(opTwo){
-                case "Inch": a = input + " Miles = " + parseFloat(input * 63360).toFixed(4) + " Inches"; break;
-                case "Feet": a = input + " Miles = " + parseFloat(input * 5280).toFixed(4) + " Feet"; break;
-                case "Yard": a = input + " Miles = " + parseFloat(input * 1760).toFixed(4) + " Yards"; break;
+                case "Inch": a = input + " Miles = " + Math.round((input * 63360) * 100) / 100+ " Inches"; break;
+                case "Feet": a = input + " Miles = " + Math.round((input * 5280) * 100) / 100+ " Feet"; break;
+                case "Yard": a = input + " Miles = " + Math.round((input * 1760) * 100) / 100+ " Yards"; break;
                 case "Mile": a = input + " Miles = " + input + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 1.609e+6).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 160934).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1609).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Kilometers"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 1.609e+6) * 100) / 100+ " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input * 160934) * 100) / 100+ " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input * 1609) * 100) / 100+ " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 1.609) * 100) / 100+ " Kilometers"; break;
             }
         break;
 
         case "Millimeter":
             switch(opTwo){
-                case "Inch": a = input + " Millimeters = " + parseFloat(input / 25.4).toFixed(4) + " Inches"; break;
-                case "Feet": a = input + " Millimeters = " + parseFloat(input / 305).toFixed(4) + " Feet"; break;
-                case "Yard": a = input + " Millimeters = " + parseFloat(input / 914).toFixed(4) + " Yards"; break;
-                case "Mile": a = input + " Millimeters = " + parseFloat(input / 1.609e+6).toFixed(4) + " Miles"; break;
+                case "Inch": a = input + " Millimeters = " + Math.round((input / 25.4) * 100) / 100+ " Inches"; break;
+                case "Feet": a = input + " Millimeters = " + Math.round((input / 305) * 100) / 100+ " Feet"; break;
+                case "Yard": a = input + " Millimeters = " + Math.round((input / 914) * 100) / 100+ " Yards"; break;
+                case "Mile": a = input + " Millimeters = " + Math.round((input / 1.609e+6) * 100) / 100+ " Miles"; break;
                 case "Millimeter": a = input + " Kilometers = " + input + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input / 10).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1000).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1e+6).toFixed(4) + " Kilometers"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input / 10) * 100) / 100+ " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input * 1000) * 100) / 100+ " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 1e+6) * 100) / 100+ " Kilometers"; break;
             }
         break;
 
         case "Centimeter":
             switch(opTwo){
-                case "Inch": a = input + " Centimeters = " + parseFloat(input / 2.54).toFixed(4) + " Inches"; break;
-                case "Feet": a = input + " Centimeters = " + parseFloat(input / 30.48).toFixed(4) + " Feet"; break;
-                case "Yard": a = input + " Centimeters = " + parseFloat(input / 91.44).toFixed(4) + " Yards"; break;
-                case "Mile": a = input + " Centimeters = " + parseFloat(input / 160934).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 10).toFixed(4) + " Millimeters"; break;
+                case "Inch": a = input + " Centimeters = " + Math.round((input / 2.54) * 100) / 100+ " Inches"; break;
+                case "Feet": a = input + " Centimeters = " + Math.round((input / 30.48) * 100) / 100+ " Feet"; break;
+                case "Yard": a = input + " Centimeters = " + Math.round((input / 91.44) * 100) / 100+ " Yards"; break;
+                case "Mile": a = input + " Centimeters = " + Math.round((input / 160934) * 100) / 100+ " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 10) * 100) / 100+ " Millimeters"; break;
                 case "Centimeter": a = input + " Kilometers = " + input + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 100).toFixed(4) + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 100000).toFixed(4) + " Kilometers"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input * 100) * 100) / 100+ " Meters"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 100000) * 100) / 100+ " Kilometers"; break;
             }
         break;
 
         case "Meter":
             switch(opTwo){
-                case "Inch": a = input + " Meters = " + parseFloat(input / 39.37).toFixed(4) + " Inches"; break;
-                case "Feet": a = input + " Meters = " + parseFloat(input * 3.281).toFixed(4) + " Feet"; break;
-                case "Yard": a = input + " Meters = " + parseFloat(input * 1.094).toFixed(4) + " Yards"; break;
-                case "Mile": a = input + " Meters = " + parseFloat(input / 1609).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 1000).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 100).toFixed(4) + " Centimeters"; break;
+                case "Inch": a = input + " Meters = " + Math.round((input / 39.37) * 100) / 100+ " Inches"; break;
+                case "Feet": a = input + " Meters = " + Math.round((input * 3.281) * 100) / 100+ " Feet"; break;
+                case "Yard": a = input + " Meters = " + Math.round((input * 1.094) * 100) / 100+ " Yards"; break;
+                case "Mile": a = input + " Meters = " + Math.round((input / 1609) * 100) / 100+ " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 1000) * 100) / 100+ " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input * 100) * 100) / 100+ " Centimeters"; break;
                 case "Meter": a = input + " Kilometers = " + input + " Meters"; break;
-                case "Kilometer": a = input + " Kilometers = " + parseFloat(input / 1000).toFixed(4) + " Kilometers"; break;
+                case "Kilometer": a = input + " Kilometers = " + Math.round((input / 1000) * 100) / 100+ " Kilometers"; break;
             }
         break;
 
         case "Kilometer":
             switch(opTwo){
-                case "Inch": a = input + " Kilometers = " + parseFloat(input * 39370).toFixed(4) + " Inches"; break;
-                case "Feet": a = input + " Kilometers = " + parseFloat(input * 3281).toFixed(4) + " Feet"; break;
-                case "Yard": a = input + " Kilometers = " + parseFloat(input * 1094).toFixed(4) + " Yards"; break;
-                case "Mile": a = input + " Kilometers = " + parseFloat(input / 1.609).toFixed(4) + " Miles"; break;
-                case "Millimeter": a = input + " Kilometers = " + parseFloat(input * 1e+6).toFixed(4) + " Millimeters"; break;
-                case "Centimeter": a = input + " Kilometers = " + parseFloat(input * 100000).toFixed(4) + " Centimeters"; break;
-                case "Meter": a = input + " Kilometers = " + parseFloat(input * 1000).toFixed(4) + " Meters"; break;
+                case "Inch": a = input + " Kilometers = " + Math.round((input * 39370) * 100) / 100+ " Inches"; break;
+                case "Feet": a = input + " Kilometers = " + Math.round((input * 3281) * 100) / 100+ " Feet"; break;
+                case "Yard": a = input + " Kilometers = " + Math.round((input * 1094) * 100) / 100+ " Yards"; break;
+                case "Mile": a = input + " Kilometers = " + Math.round((input / 1.609) * 100) / 100+ " Miles"; break;
+                case "Millimeter": a = input + " Kilometers = " + Math.round((input * 1e+6) * 100) / 100+ " Millimeters"; break;
+                case "Centimeter": a = input + " Kilometers = " + Math.round((input * 100000) * 100) / 100+ " Centimeters"; break;
+                case "Meter": a = input + " Kilometers = " + Math.round((input * 1000) * 100) / 100+ " Meters"; break;
                 case "Kilometer": a = input + " Kilometers = " + input + " Kilometers"; break;
             }
         break;
@@ -132,7 +132,7 @@ function Distance() {
 //End of function.
 
 //This function converts the different weights to one another.
-function Weight() {
+function Weight(){
     var opOne = document.getElementById("WeightOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("WeightOptionTwo");
@@ -146,65 +146,65 @@ function Weight() {
         case "Pound":
             switch(opTwo){
                 case "Pound": a = input + " Pounds = " + input + " Pounds"; break;
-                case "Ounce": a = input + " Pounds = " + parseFloat(input * 16).toFixed(4) + " Ounces"; break;
-                case "Gram": a = input + " Pounds = " + parseFloat(input * 454).toFixed(4) + " Grams"; break;
-                case "Kilogram": a = input + " Pounds = " + parseFloat(input / 2.205).toFixed(4) + " Kilograms"; break;
-                case "US Ton": a = input + " Pounds = " + parseFloat(input / 2000).toFixed(4) + " US Tons"; break;
-                case "UK Ton": a = input + " Pounds = " + parseFloat(input / 2205).toFixed(4) + " UK Tons"; break;
+                case "Ounce": a = input + " Pounds = " + Math.round((input * 16) * 100) / 100+ " Ounces"; break;
+                case "Gram": a = input + " Pounds = " + Math.round((input * 454) * 100) / 100+ " Grams"; break;
+                case "Kilogram": a = input + " Pounds = " + Math.round((input / 2.205) * 100) / 100+ " Kilograms"; break;
+                case "US Ton": a = input + " Pounds = " + Math.round((input / 2000) * 100) / 100+ " US Tons"; break;
+                case "UK Ton": a = input + " Pounds = " + Math.round((input / 2205) * 100) / 100+ " UK Tons"; break;
             }
         break;
 
         case "Ounce":
             switch(opTwo){
-                case "Pound": a = input + " Ounces = " + parseFloat(input / 16).toFixed(4) + " Pounds"; break;
+                case "Pound": a = input + " Ounces = " + Math.round((input / 16) * 100) / 100+ " Pounds"; break;
                 case "Ounce": a = input + " Ounces = " + input + " Ounces"; break;
-                case "Gram": a = input + " Ounces = " + parseFloat(input * 28.35).toFixed(4) + " Grams"; break;
-                case "Kilogram": a = input + " Ounces = " + parseFloat(input / 35.274).toFixed(4) + " Kilograms"; break;
-                case "US Ton": a = input + " Ounces = " + parseFloat(input / 32000).toFixed(4) + " US Tons"; break;
-                case "UK Ton": a = input + " Ounces = " + parseFloat(input / 35274).toFixed(4) + " UK Tons"; break;
+                case "Gram": a = input + " Ounces = " + Math.round((input * 28.35) * 100) / 100+ " Grams"; break;
+                case "Kilogram": a = input + " Ounces = " + Math.round((input / 35.274) * 100) / 100+ " Kilograms"; break;
+                case "US Ton": a = input + " Ounces = " + Math.round((input / 32000) * 100) / 100+ " US Tons"; break;
+                case "UK Ton": a = input + " Ounces = " + Math.round((input / 35274) * 100) / 100+ " UK Tons"; break;
             }
         break;
 
         case "Gram":
             switch(opTwo){
-                case "Pound": a = input + " Grams = " + parseFloat(input / 454).toFixed(4) + " Pounds"; break;
-                case "Ounce": a = input + " Grams = " + parseFloat(input / 28.35).toFixed(4) + " Ounces"; break;
+                case "Pound": a = input + " Grams = " + Math.round((input / 454) * 100) / 100+ " Pounds"; break;
+                case "Ounce": a = input + " Grams = " + Math.round((input / 28.35) * 100) / 100+ " Ounces"; break;
                 case "Gram": a = input + " Grams = " + input + " Grams"; break;
-                case "Kilogram": a = input + " Grams = " + parseFloat(input / 1000).toFixed(4) + " Kilograms"; break;
-                case "US Ton": a = input + " Gram = " + parseFloat(input / 907185).toFixed(4) + " US Tons"; break;
-                case "UK Ton": a = input + " Gram = " + parseFloat(input / 1e+6).toFixed(4) + " UK Tons"; break;
+                case "Kilogram": a = input + " Grams = " + Math.round((input / 1000) * 100) / 100+ " Kilograms"; break;
+                case "US Ton": a = input + " Gram = " + Math.round((input / 907185) * 100) / 100+ " US Tons"; break;
+                case "UK Ton": a = input + " Gram = " + Math.round((input / 1e+6) * 100) / 100+ " UK Tons"; break;
             }
         break;
 
         case "Kilogram":
             switch(opTwo){
-                case "Pound": a = input + " Kilograms = " + parseFloat(input * 2.205).toFixed(4) + " Pounds"; break;
-                case "Ounce": a = input + " Kilograms = " + parseFloat(input * 35.274).toFixed(4) + " Ounces"; break;
-                case "Gram": a = input + " Kilograms = " + parseFloat(input * 1000).toFixed(4) + " Grams"; break;
+                case "Pound": a = input + " Kilograms = " + Math.round((input * 2.205) * 100) / 100+ " Pounds"; break;
+                case "Ounce": a = input + " Kilograms = " + Math.round((input * 35.274) * 100) / 100+ " Ounces"; break;
+                case "Gram": a = input + " Kilograms = " + Math.round((input * 1000) * 100) / 100+ " Grams"; break;
                 case "Kilogram": a = input + " Kilograms = " + input + " Kilograms"; break;
-                case "US Ton": a = input + " Kilograms = " + parseFloat(input / 907).toFixed(4) + " US Tons"; break;
-                case "UK Ton": a = input + " Kilograms = " + parseFloat(input / 1000).toFixed(4) + " UK Tons"; break;
+                case "US Ton": a = input + " Kilograms = " + Math.round((input / 907) * 100) / 100+ " US Tons"; break;
+                case "UK Ton": a = input + " Kilograms = " + Math.round((input / 1000) * 100) / 100+ " UK Tons"; break;
             }
         break;
 
         case "US Ton":
             switch(opTwo){
-                case "Pound": a = input + " US Ton = " + parseFloat(input * 2000).toFixed(4) + " Pounds"; break;
-                case "Ounce": a = input + " US Ton = " + parseFloat(input * 32000).toFixed(4) + " Ounces"; break;
-                case "Gram": a = input + " US Ton = " + parseFloat(input * 907185).toFixed(4) + " Grams"; break;
-                case "Kilogram": a = input + " US Ton = " + parseFloat(input * 907).toFixed(4) + " Kilograms"; break;
+                case "Pound": a = input + " US Ton = " + Math.round((input * 2000) * 100) / 100+ " Pounds"; break;
+                case "Ounce": a = input + " US Ton = " + Math.round((input * 32000) * 100) / 100+ " Ounces"; break;
+                case "Gram": a = input + " US Ton = " + Math.round((input * 907185) * 100) / 100+ " Grams"; break;
+                case "Kilogram": a = input + " US Ton = " + Math.round((input * 907) * 100) / 100+ " Kilograms"; break;
                 case "US Ton": a = input + " US Ton = " + input + " US Tons"; break;
-                case "UK Ton": a = input + " US Ton = " + parseFloat(input / 1.102).toFixed(4) + " UK Tons"; break;
+                case "UK Ton": a = input + " US Ton = " + Math.round((input / 1.102) * 100) / 100+ " UK Tons"; break;
             }
         break;
 
         case "UK Ton":
             switch(opTwo){
-                case "Pound": a = input + " UK Ton = " + parseFloat(input * 2205).toFixed(4) + " Pounds"; break;
-                case "Ounce": a = input + " UK Ton = " + parseFloat(input * 35274).toFixed(4) + " Ounces"; break;
-                case "Gram": a = input + " UK Ton = " + parseFloat(input * 1e+6).toFixed(4) + " Grams"; break;
-                case "Kilogram": a = input + " UK Ton = " + parseFloat(input * 1000).toFixed(4) + " Kilograms"; break;
-                case "US Ton": a = input + " UK Ton = " + parseFloat(input * 1.102).toFixed(4) + " US Tons"; break;
+                case "Pound": a = input + " UK Ton = " + Math.round((input * 2205) * 100) / 100+ " Pounds"; break;
+                case "Ounce": a = input + " UK Ton = " + Math.round((input * 35274) * 100) / 100+ " Ounces"; break;
+                case "Gram": a = input + " UK Ton = " + Math.round((input * 1e+6) * 100) / 100+ " Grams"; break;
+                case "Kilogram": a = input + " UK Ton = " + Math.round((input * 1000) * 100) / 100+ " Kilograms"; break;
+                case "US Ton": a = input + " UK Ton = " + Math.round((input * 1.102) * 100) / 100+ " US Tons"; break;
                 case "UK Ton": a = input + " UK Ton = " + input + " UK Tons"; break;
             }
         break;
@@ -215,7 +215,7 @@ function Weight() {
 //End of function
 
 //This function converts the different weights to one another.
-function Temperature() {
+function Temperature(){
     var opOne = document.getElementById("TempOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("TempOptionTwo");
@@ -229,23 +229,23 @@ function Temperature() {
         case "Fahrenheit":
             switch(opTwo){
                 case "Fahrenheit": a = input + " Fahrenheit = " + input + " Fahrenheit"; break;
-                case "Celsius": a = input + " Fahrenheit = " + parseFloat((input - 32) * 5/9).toFixed(4) + " Celsius"; break;
-                case "Kelvin": a = input + " Fahrenheit = " + parseFloat((input -32) * 5/9 + 273.15).toFixed(4) + " Kelvin"; break;
+                case "Celsius": a = input + " Fahrenheit = " + Math.round((((input - 32) * 100) / 100* 5/9) * 100) / 100+ " Celsius"; break;
+                case "Kelvin": a = input + " Fahrenheit = " + Math.round((((input -32) * 100) / 100* 5/9 + 273.15) * 100) / 100+ " Kelvin"; break;
             }
         break;
 
         case "Celsius":
             switch(opTwo){
-                case "Fahrenheit": a = input + " Celsius = " + parseFloat((input * 5/9) +32).toFixed(4) + " Fahrenheit"; break;
+                case "Fahrenheit": a = input + " Celsius = " + Math.round((((input * 5/9) * 100) / 100+32) * 100) / 100+ " Fahrenheit"; break;
                 case "Celsius": a = input + " Celsius = " + input + " Celsius"; break;
-                case "Kelvin": a = input + " Celsius = " + parseFloat(input + 273.15).toFixed(4) + " Kelvin"; break;
+                case "Kelvin": a = input + " Celsius = " + Math.round((input + 273.15) * 100) / 100 + " Kelvin"; break;
             }
         break;
 
         case "Kelvin":
             switch(opTwo){
-                case "Fahrenheit": a = input + " Kelvin = " + parseFloat((input - 273.15) * 9/5 + 32).toFixed(4) + " Fahrenheit"; break;
-                case "Celsius": a = input + " Kelvin = " + parseFloat(input - 273.15).toFixed(4) + " Celsius"; break;
+                case "Fahrenheit": a = input + " Kelvin = " + Math.round((((input - 273.15) * 100) / 100* 9/5 + 32) * 100) / 100+ " Fahrenheit"; break;
+                case "Celsius": a = input + " Kelvin = " + Math.round((input - 273.15) * 100) / 100+ " Celsius"; break;
                 case "Kelvin": a = input + " Kelvin = " + input + " Kelvin"; break;
             }
         break;
@@ -256,7 +256,7 @@ function Temperature() {
 //End of function
 
 //This function converts the different times to one another.
-function Time() {
+function Time(){
     var opOne = document.getElementById("TimeOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("TimeOptionTwo");
@@ -270,65 +270,65 @@ function Time() {
         case "Seconds":
             switch(opTwo){
                 case "Seconds": a = input + " Seconds = " + input + " Seconds"; break;
-                case "Minutes": a = input + " Seconds = " + parseFloat(input / 60).toFixed(4) + " Minutes"; break;
-                case "Hours": a = input + " Seconds = " + parseFloat(input / 3600).toFixed(4) + " Hours"; break;
-                case "Days": a = input + " Seconds = " + parseFloat(input / 86400).toFixed(4) + " Days"; break;
-                case "Months": a = input + " Seconds = " + parseFloat(input / 2.628e+6).toFixed(4) + " Months"; break;
-                case "Years": a = input + " Seconds = " + parseFloat(input / 3.154e+7).toFixed(4) + " Years"; break;
+                case "Minutes": a = input + " Seconds = " + Math.round((input / 60) * 100) / 100+ " Minutes"; break;
+                case "Hours": a = input + " Seconds = " + Math.round((input / 3600) * 100) / 100+ " Hours"; break;
+                case "Days": a = input + " Seconds = " + Math.round((input / 86400) * 100) / 100+ " Days"; break;
+                case "Months": a = input + " Seconds = " + Math.round((input / 2.628e+6) * 100) / 100+ " Months"; break;
+                case "Years": a = input + " Seconds = " + Math.round((input / 3.154e+7) * 100) / 100+ " Years"; break;
             }
         break;
 
         case "Minutes":
             switch(opTwo){
-                case "Seconds": a = input + " Minutes = " + parseFloat(input * 60).toFixed(4) + " Seconds"; break;
+                case "Seconds": a = input + " Minutes = " + Math.round((input * 60) * 100) / 100+ " Seconds"; break;
                 case "Minutes": a = input + " Minutes = " + input + " Minutes"; break;
-                case "Hours": a = input + " Minutes = " + parseFloat(input / 60).toFixed(4) + " Hours"; break;
-                case "Days": a = input + " Minutes = " + parseFloat(input / 1440).toFixed(4) + " Days"; break;
-                case "Months": a = input + " Minutes = " + parseFloat(input / 43800).toFixed(4) + " Months"; break;
-                case "Years": a = input + " Minutes = " + parseFloat(input / 525600).toFixed(4) + " Years"; break;
+                case "Hours": a = input + " Minutes = " + Math.round((input / 60) * 100) / 100+ " Hours"; break;
+                case "Days": a = input + " Minutes = " + Math.round((input / 1440) * 100) / 100+ " Days"; break;
+                case "Months": a = input + " Minutes = " + Math.round((input / 43800) * 100) / 100+ " Months"; break;
+                case "Years": a = input + " Minutes = " + Math.round((input / 525600) * 100) / 100+ " Years"; break;
             }
         break;
 
         case "Hours":
             switch(opTwo){
-                case "Seconds": a = input + " Hours = " + parseFloat(input * 3600).toFixed(4) + " Seconds"; break;
-                case "Minutes": a = input + " Hours = " + parseFloat(input * 60).toFixed(4) + " Minutes"; break;
+                case "Seconds": a = input + " Hours = " + Math.round((input * 3600) * 100) / 100+ " Seconds"; break;
+                case "Minutes": a = input + " Hours = " + Math.round((input * 60) * 100) / 100+ " Minutes"; break;
                 case "Hours": a = input + " Hours = " + input + " Hours"; break;
-                case "Days": a = input + " Hours = " + parseFloat(input / 24).toFixed(4) + " Days"; break;
-                case "Months": a = input + " Hours = " + parseFloat(input / 730).toFixed(4) + " Months"; break;
-                case "Years": a = input + " Hours = " + parseFloat(input / 8760).toFixed(4) + " Years"; break;
+                case "Days": a = input + " Hours = " + Math.round((input / 24) * 100) / 100+ " Days"; break;
+                case "Months": a = input + " Hours = " + Math.round((input / 730) * 100) / 100+ " Months"; break;
+                case "Years": a = input + " Hours = " + Math.round((input / 8760) * 100) / 100+ " Years"; break;
             }
         break;
 
         case "Days":
             switch(opTwo){
-                case "Seconds": a = input + " Days = " + parseFloat(input * 86400).toFixed(4) + " Seconds"; break;
-                case "Minutes": a = input + " Days = " + parseFloat(input * 1440).toFixed(4) + " Minutes"; break;
-                case "Hours": a = input + " Days = " + parseFloat(input * 24).toFixed(4) + " Hours"; break;
+                case "Seconds": a = input + " Days = " + Math.round((input * 86400) * 100) / 100+ " Seconds"; break;
+                case "Minutes": a = input + " Days = " + Math.round((input * 1440) * 100) / 100+ " Minutes"; break;
+                case "Hours": a = input + " Days = " + Math.round((input * 24) * 100) / 100+ " Hours"; break;
                 case "Days": a = input + " Days = " + input + " Days"; break;
-                case "Months": a = input + " Days = " + parseFloat(input / 30.417).toFixed(4) + " Months"; break;
-                case "Years": a = input + " Days = " + parseFloat(input / 365).toFixed(4) + " Years"; break;
+                case "Months": a = input + " Days = " + Math.round((input / 30.417) * 100) / 100+ " Months"; break;
+                case "Years": a = input + " Days = " + Math.round((input / 365) * 100) / 100+ " Years"; break;
             }
         break;
 
         case "Months":
             switch(opTwo){
-                case "Seconds": a = input + " Months = " + parseFloat(input * 2.628e+6).toFixed(4) + " Seconds"; break;
-                case "Minutes": a = input + " Months = " + parseFloat(input * 43800).toFixed(4) + " Minutes"; break;
-                case "Hours": a = input + " Months = " + parseFloat(input * 730).toFixed(4) + " Hours"; break;
-                case "Days": a = input + " Months = " + parseFloat(input * 30.417).toFixed(4) + " Days"; break;
+                case "Seconds": a = input + " Months = " + Math.round((input * 2.628e+6) * 100) / 100+ " Seconds"; break;
+                case "Minutes": a = input + " Months = " + Math.round((input * 43800) * 100) / 100+ " Minutes"; break;
+                case "Hours": a = input + " Months = " + Math.round((input * 730) * 100) / 100+ " Hours"; break;
+                case "Days": a = input + " Months = " + Math.round((input * 30.417) * 100) / 100+ " Days"; break;
                 case "Months": a = input + " Months = " + input + " Months"; break;
-                case "Years": a = input + " Months = " + parseFloat(input / 12).toFixed(4) + " Years"; break;
+                case "Years": a = input + " Months = " + Math.round((input / 12) * 100) / 100+ " Years"; break;
             }
         break;
 
         case "Years":
             switch(opTwo){
-                case "Seconds": a = input + " Years = " + parseFloat(input * 3.154e+7).toFixed(4) + " Seconds"; break;
-                case "Minutes": a = input + " Years = " + parseFloat(input * 525600).toFixed(4) + " Minutes"; break;
-                case "Hours": a = input + " Years = " + parseFloat(input * 8760).toFixed(4) + " Hours"; break;
-                case "Days": a = input + " Years = " + parseFloat(input * 365).toFixed(4) + " Days"; break;
-                case "Months": a = input + " Years = " + parseFloat(input * 12).toFixed(4) + " Months"; break;
+                case "Seconds": a = input + " Years = " + Math.round((input * 3.154e+7) * 100) / 100+ " Seconds"; break;
+                case "Minutes": a = input + " Years = " + Math.round((input * 525600) * 100) / 100+ " Minutes"; break;
+                case "Hours": a = input + " Years = " + Math.round((input * 8760) * 100) / 100+ " Hours"; break;
+                case "Days": a = input + " Years = " + Math.round((input * 365) * 100) / 100+ " Days"; break;
+                case "Months": a = input + " Years = " + Math.round((input * 12) * 100) / 100+ " Months"; break;
                 case "Years": a = input + " Years = " + input + " Years"; break;
             }
         break;
@@ -339,7 +339,7 @@ function Time() {
 //End of function
 
 //This function converts the different speeds to one another.
-function Speed() {
+function Speed(){
     var opOne = document.getElementById("SpeedOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("SpeedOptionTwo");
@@ -353,49 +353,49 @@ function Speed() {
         case "Miles Per Hour":
             switch(opTwo){
                 case "Miles Per Hour": a = input + " Miles Per Hour = " + input + " Miles Per Hour"; break;
-                case "Feet Per Second": a = input + " Miles Per Hour = " + parseFloat(input * 1.467).toFixed(4) + " Feet Per Second"; break;
-                case "Meters Per Second": a = input + " Miles Per Hour = " + parseFloat(input / 2.237).toFixed(4) + " Meters Per Second"; break;
-                case "Kilometer Per Hour": a = input + " Miles Per Hour = " + parseFloat(input * 1.609).toFixed(4) + " Kilometer Per Hour"; break;
-                case "Knot": a = input + " Miles Per Hour = " + parseFloat(input / 1.151).toFixed(4) + " Knot"; break;
+                case "Feet Per Second": a = input + " Miles Per Hour = " + Math.round((input * 1.467) * 100) / 100+ " Feet Per Second"; break;
+                case "Meters Per Second": a = input + " Miles Per Hour = " + Math.round((input / 2.237) * 100) / 100+ " Meters Per Second"; break;
+                case "Kilometer Per Hour": a = input + " Miles Per Hour = " + Math.round((input * 1.609) * 100) / 100+ " Kilometer Per Hour"; break;
+                case "Knot": a = input + " Miles Per Hour = " + Math.round((input / 1.151) * 100) / 100+ " Knot"; break;
             }
         break;
 
         case "Feet Per Second":
             switch(opTwo){
-                case "Miles Per Hour": a = input + " Feet Per Second = " + parseFloat(input / 1.467).toFixed(4) + " Miles Per Hour"; break;
+                case "Miles Per Hour": a = input + " Feet Per Second = " + Math.round((input / 1.467) * 100) / 100+ " Miles Per Hour"; break;
                 case "Feet Per Second": a = input + " Feet Per Second = " + input + " Feet Per Second"; break;
-                case "Meters Per Second": a = input + " Feet Per Second = " + parseFloat(input / 3.281).toFixed(4) + " Meters Per Second"; break;
-                case "Kilometer Per Hour": a = input + " Feet Per Second = " + parseFloat(input * 1.097).toFixed(4) + " Kilometer Per Hour"; break;
-                case "Knot": a = input + " Feet Per Second = " + parseFloat(input / 1.688).toFixed(4) + " Knot"; break;
+                case "Meters Per Second": a = input + " Feet Per Second = " + Math.round((input / 3.281) * 100) / 100+ " Meters Per Second"; break;
+                case "Kilometer Per Hour": a = input + " Feet Per Second = " + Math.round((input * 1.097) * 100) / 100+ " Kilometer Per Hour"; break;
+                case "Knot": a = input + " Feet Per Second = " + Math.round((input / 1.688) * 100) / 100+ " Knot"; break;
             }
         break;
 
         case "Meters Per Second":
             switch(opTwo){
-                case "Miles Per Hour": a = input + " Meters Per Second = " + parseFloat(input * 2.237).toFixed(4) + " Miles Per Hour"; break;
-                case "Feet Per Second": a = input + " Meters Per Second = " + parseFloat(input * 3.281).toFixed(4) + " Feet Per Second"; break;
+                case "Miles Per Hour": a = input + " Meters Per Second = " + Math.round((input * 2.237) * 100) / 100+ " Miles Per Hour"; break;
+                case "Feet Per Second": a = input + " Meters Per Second = " + Math.round((input * 3.281) * 100) / 100+ " Feet Per Second"; break;
                 case "Meters Per Second": a = input + " Meters Per Second = " + input + " Meters Per Second"; break;
-                case "Kilometer Per Hour": a = input + " Meters Per Second = " + parseFloat(input * 3.6).toFixed(4) + " Kilometer Per Hour"; break;
-                case "Knot": a = input + " Meters Per Second = " + parseFloat(input * 1.944).toFixed(4) + " Knot"; break;
+                case "Kilometer Per Hour": a = input + " Meters Per Second = " + Math.round((input * 3.6) * 100) / 100+ " Kilometer Per Hour"; break;
+                case "Knot": a = input + " Meters Per Second = " + Math.round((input * 1.944) * 100) / 100+ " Knot"; break;
             }
         break;
 
         case "Kilometer Per Hour":
             switch(opTwo){
-                case "Miles Per Hour": a = input + " Kilometer Per Hour = " + parseFloat(input / 1.609).toFixed(4) + " Miles Per Hour"; break;
-                case "Feet Per Second": a = input + " Kilometer Per Hour = " + parseFloat(input / 1.097).toFixed(4) + " Feet Per Second"; break;
-                case "Meters Per Second": a = input + " Kilometer Per Hour = " + parseFloat(input / 3.6).toFixed(4) + " Meters Per Second"; break;
+                case "Miles Per Hour": a = input + " Kilometer Per Hour = " + Math.round((input / 1.609) * 100) / 100+ " Miles Per Hour"; break;
+                case "Feet Per Second": a = input + " Kilometer Per Hour = " + Math.round((input / 1.097) * 100) / 100+ " Feet Per Second"; break;
+                case "Meters Per Second": a = input + " Kilometer Per Hour = " + Math.round((input / 3.6) * 100) / 100+ " Meters Per Second"; break;
                 case "Kilometer Per Hour": a = input + " Kilometer Per Hour = " + input + " Kilometer Per Hour"; break;
-                case "Knot": a = input + " Kilometer Per Hour = " + parseFloat(input / 1.852).toFixed(4) + " Knot"; break;
+                case "Knot": a = input + " Kilometer Per Hour = " + Math.round((input / 1.852) * 100) / 100+ " Knot"; break;
             }
         break;
 
         case "Knot":
             switch(opTwo){
-                case "Miles Per Hour": a = input + " Knot = " + parseFloat(input * 1.151).toFixed(4) + " Miles Per Hour"; break;
-                case "Feet Per Second": a = input + " Knot = " + parseFloat(input * 1.688).toFixed(4) + " Feet Per Second"; break;
-                case "Meters Per Second": a = input + " Knot = " + parseFloat(input / 1.944).toFixed(4) + " Meters Per Second"; break;
-                case "Kilometer Per Hour": a = input + " Knot = " + parseFloat(input * 1.852).toFixed(4) + " Kilometer Per Hour"; break;
+                case "Miles Per Hour": a = input + " Knot = " + Math.round((input * 1.151) * 100) / 100+ " Miles Per Hour"; break;
+                case "Feet Per Second": a = input + " Knot = " + Math.round((input * 1.688) * 100) / 100+ " Feet Per Second"; break;
+                case "Meters Per Second": a = input + " Knot = " + Math.round((input / 1.944) * 100) / 100+ " Meters Per Second"; break;
+                case "Kilometer Per Hour": a = input + " Knot = " + Math.round((input * 1.852) * 100) / 100+ " Kilometer Per Hour"; break;
                 case "Knot": a = input + " Knot = " + input + " Knot"; break;
             }
         break;
@@ -406,7 +406,7 @@ function Speed() {
 //End of function
 
 //This function converts the different frequencies to one another.
-function Frequency() {
+function Frequency(){
     var opOne = document.getElementById("FreOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("FreOptionTwo");
@@ -420,35 +420,35 @@ function Frequency() {
         case "Hertz":
             switch(opTwo){
                 case "Hertz": a = input + " Hertz = " + input + " Hertz"; break;
-                case "Kilohertz": a = input + " Hertz = " + parseFloat(input / 1000).toFixed(4) + " Kilohertz"; break;
-                case "Megahertz": a = input + " Hertz = " + parseFloat(input / 1e+6).toFixed(4) + " Megahertz"; break;
-                case "Gigahertz": a = input + " Hertz = " + parseFloat(input / 1e+9).toFixed(4) + " Gigahertz"; break;
+                case "Kilohertz": a = input + " Hertz = " + Math.round((input / 1000) * 100) / 100+ " Kilohertz"; break;
+                case "Megahertz": a = input + " Hertz = " + Math.round((input / 1e+6) * 100) / 100+ " Megahertz"; break;
+                case "Gigahertz": a = input + " Hertz = " + Math.round((input / 1e+9) * 100) / 100+ " Gigahertz"; break;
             }
         break;
 
         case "Kilohertz":
             switch(opTwo){
-                case "Hertz": a = input + " Kilohertz = " + parseFloat(input * 1000).toFixed(4) + " Hertz"; break;
+                case "Hertz": a = input + " Kilohertz = " + Math.round((input * 1000) * 100) / 100+ " Hertz"; break;
                 case "Kilohertz": a = input + " Kilohertz = " + input + " Kilohertz"; break;
-                case "Megahertz": a = input + " Kilohertz = " + parseFloat(input / 1000).toFixed(4) + " Megahertz"; break;
-                case "Gigahertz": a = input + " Kilohertz = " + parseFloat(input / 1e+6).toFixed(4) + " Gigahertz"; break;
+                case "Megahertz": a = input + " Kilohertz = " + Math.round((input / 1000) * 100) / 100+ " Megahertz"; break;
+                case "Gigahertz": a = input + " Kilohertz = " + Math.round((input / 1e+6) * 100) / 100+ " Gigahertz"; break;
             }
         break;
 
         case "Megahertz":
             switch(opTwo){
-                case "Hertz": a = input + " Megahertz = " + parseFloat(input * 1e+6).toFixed(4) + " Hertz"; break;
-                case "Kilohertz": a = input + " Megahertz = " + parseFloat(input * 1000).toFixed(4) + " Kilohertz"; break;
+                case "Hertz": a = input + " Megahertz = " + Math.round((input * 1e+6) * 100) / 100+ " Hertz"; break;
+                case "Kilohertz": a = input + " Megahertz = " + Math.round((input * 1000) * 100) / 100+ " Kilohertz"; break;
                 case "Megahertz": a = input + " Megahertz = " + input + " Megahertz"; break;
-                case "Gigahertz": a = input + " Megahertz = " + parseFloat(input / 1000).toFixed(4) + " Gigahertz"; break;
+                case "Gigahertz": a = input + " Megahertz = " + Math.round((input / 1000) * 100) / 100+ " Gigahertz"; break;
             }
         break;
 
         case "Gigahertz":
             switch(opTwo){
-                case "Hertz": a = input + " Gigahertz = " + parseFloat(input / 1e+9).toFixed(4) + " Hertz"; break;
-                case "Kilohertz": a = input + " Gigahertz = " + parseFloat(input / 1e+6).toFixed(4) + " Kilohertz"; break;
-                case "Megahertz": a = input + " Gigahertz = " + parseFloat(input / 1000).toFixed(4) + " Megahertz"; break;
+                case "Hertz": a = input + " Gigahertz = " + Math.round((input / 1e+9) * 100) / 100+ " Hertz"; break;
+                case "Kilohertz": a = input + " Gigahertz = " + Math.round((input / 1e+6) * 100) / 100+ " Kilohertz"; break;
+                case "Megahertz": a = input + " Gigahertz = " + Math.round((input / 1000) * 100) / 100+ " Megahertz"; break;
                 case "Gigahertz": a = input + " Gigahertz = " + input + " Gigahertz"; break;
             }
         break;
@@ -459,7 +459,7 @@ function Frequency() {
 //End of function
 
 //This function converts the different Fuels to one another.
-function Fuel() {
+function Fuel(){
     var opOne = document.getElementById("FuelOptionOne");
     opOne = opOne.options[opOne.selectedIndex].text;
     var opTwo = document.getElementById("FuelOptionTwo");
@@ -473,13 +473,13 @@ function Fuel() {
         case "Kilometer per Liter":
             switch(opTwo){
                 case "Kilometer per Liter": a = input + " Kilometer per Liter = " + input + " Kilometer per Liter"; break;
-                case "Miles per Gallon": a = input + " Kilometer per Liter = " + parseFloat(input * 2.352).toFixed(4) + " Miles per Gallon"; break;
+                case "Miles per Gallon": a = input + " Kilometer per Liter = " + Math.round((input * 2.352) * 100) / 100+ " Miles per Gallon"; break;
             }
         break;
 
         case "Miles per Gallon":
             switch(opTwo){
-                case "Kilometer per Liter": a = input + " Miles per Gallon = " + parseFloat(input / 2.352).toFixed(4) + " Kilometer per Liter"; break;
+                case "Kilometer per Liter": a = input + " Miles per Gallon = " + Math.round((input / 2.352) * 100) / 100+ " Kilometer per Liter"; break;
                 case "Miles per Gallon": a = input + " Miles per Gallon = " + input + " Miles per Gallon"; break;
             }
         break;
